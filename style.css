@@ -1,0 +1,390 @@
+
+
+/* Estilo geral */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    font-family: "Times New Roman", serif;
+    font-weight: 400;
+    font-style: normal;
+}
+body {
+    background-color: rgb(66, 65, 65);
+    height: 100vh;
+}
+.interface {
+    max-width: 1280px;
+    margin: 0 auto;
+}
+.flex {
+    display: flex;
+}
+
+/* Botões de contato */
+.btn-contato button,
+.btn-social button {
+    padding: 20px 20px;
+    background-color: rgba(122, 117, 117, 0.986);
+    font-size: 18px;
+    font-weight: 600;
+    border: none;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: .2s;
+    color: rgb(20, 20, 20);
+    margin: 0px;
+}
+
+h2.titulo {
+    color: antiquewhite;
+    font-size: 40px;
+    text-align: center;
+}
+h2.titulo span {
+    color: rgb(218, 129, 129);
+}
+
+button:hover {
+    box-shadow: 0px 0px 8px #ff0000;
+    transform: scale(1.05);
+}
+
+/* Estilo do cabeçalho */
+header {
+    padding: 40px 4%;
+}
+header > .interface {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+header a {
+    color: rgb(184, 184, 184);
+    text-decoration: none;
+    display: inline-block;
+    transition: color 0.2s;
+}
+header a:hover {
+    color: rgb(207, 91, 62);
+    transform: scale(1.15);
+}
+
+header nav ul {
+    list-style-type: none;
+}
+
+header nav ul li {
+    display: inline-block;
+    padding: 0 40px;
+}
+
+.btn-contato button:hover,
+.btn-social button:hover {
+    box-shadow: 0px 0px 8px #ff0000;
+    transform: scale(1.05);
+}
+
+/* Seção topo-do-site */
+section.topo-do-site {
+    padding: 40px 4%;
+}
+
+section.topo-do-site .flex {
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+}
+.topo-do-site h1 {
+    color: aliceblue;
+    font-size: 42px;
+    line-height: 40px;
+}
+.topo-do-site h1 span {
+    color: rgb(124, 124, 124);
+}
+.topo-do-site p {
+    color: aliceblue;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 40px 0;
+}
+
+.topo-do-site .img-topo-site img {
+    position: relative;
+    animation: flutuar 2s ease-in-out infinite alternate;
+}
+
+@keyframes flutuar {
+    0% {
+        top: 0;
+    }
+    100% {
+        top: 30px;
+    }
+}
+
+/* Seção Habilidades */
+section.Habilidades {
+    padding: 36px 4%;
+}
+section.Habilidades .flex {
+    gap: 60px;
+}
+
+.Habilidades .Habilidades-box {
+    color: aliceblue;
+    padding: 40px;
+    border: 2px solid rgb(218, 129, 129);
+    border-radius: 20px;
+    margin-top: 45px;
+    transition: .2s;
+}
+.Habilidades .Habilidades-box:hover {
+    transform: scale(1.05);
+    box-shadow: 0 0 20px rgb(218, 129, 129);
+}
+.Habilidades .Habilidades-box i {
+    font-size: 70px;
+    color: #af3a3a;
+}
+
+/* Seção Sobre */
+section.Sobre {
+    padding: 40px 4%;
+}
+
+section.Sobre .flex {
+    display: flex;
+    align-items: center;
+    gap: 60px;
+}
+
+.Sobre .txt-Sobre {
+    color:  #fff;
+}
+.Sobre .txt-Sobre h2 {
+    font-size: 40px;
+    line-height: 40px;
+}
+.Sobre .txt-Sobre h2 span {
+    color: #af3a3a;
+    display: block;
+}
+.Sobre .txt-Sobre h3 {
+    font-size: 40px;
+    line-height: 40px;
+}
+.Sobre .txt-Sobre h3 span {
+    color: #af3a3a;
+    display: contents;
+}
+.Sobre .txt-Sobre p span{
+    margin: 20px 0;
+    text-align: justify;
+    color: #af3a3a;
+    font-display: bold;
+}
+.Sobre .txt-Sobre p {
+    margin: 20px 0;
+    text-align: justify;
+}
+.Sobre .btn-social button {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #af3a3a;
+    font-size: 22px;
+    cursor: pointer;
+    margin: 0 18px;
+}
+
+/* Seção Projetos */
+section.Projectos {
+    padding: 80px 4%;
+    box-shadow: 0 0 40px 10px rgb(59, 42, 42);
+    
+}
+section.Projectos .flex {
+    justify-content: space-around;
+    margin-top: 60px;
+    gap: 80px;
+}
+.img-port {
+    width: 500px;
+    height: 300px;
+    background-color: #af3a3a;
+    background-size: cover;
+    background-position: 100% 0%;
+    border-radius: 40px;
+    position: relative;
+}
+.img-port:hover {
+    background-position: 100% 100%;
+}
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(175, 58, 58, 0.8);
+    border-radius: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px;
+    font-weight: 600;
+    color: rgb(59, 42, 42);
+    opacity: 0;
+    transition: opacity 0.2s;
+}
+.img-port:hover .overlay {
+    opacity: 0 ;
+}
+
+
+section.formulario {
+
+        padding: 40px 4%;
+        background: linear-gradient(135deg, rgb(65, 65 ,65 ), rgb(65, 65, 65 ));
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+    
+    .formulario .interface {
+        text-align: center;
+    }
+    
+    .formulario .titulo {
+        font-size: 2.5em;
+        color: #333;
+        margin-bottom: 20px;
+    }
+    
+    .formulario .titulo span {
+        color: #af3a3a;
+    }
+    
+    .formulario form {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        justify-content: center;
+        margin: 0 auto;
+    }
+    form input, form textarea{
+        background-color: rgb(65, 65, 65);
+        border: 0;
+        outline: 0;
+        padding: 20px 15px;
+        border-radius: 15%;
+        font-size: 18px;
+    }
+    .formulario input[type="text"],
+    .formulario textarea {
+        width: 100%;
+        padding: 15px;
+        border: 2px solid rgb(65, 65, 65);
+        border-radius: 10px;
+        font-size: 1em;
+        transition: border 0.3s;
+    }
+    
+    .formulario input[type="text"]:focus,
+    .formulario textarea:focus {
+        border-color: #af3a3a;
+        outline: none;
+    }
+    
+    .formulario .btn-enviar input {
+        background-color: #af3a3a;
+        color: #eeeeee;
+        padding: 15px;
+        border: none;
+        border-radius: 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+        transition: background-color 0.3s;
+    }
+    
+    .formulario .btn-enviar input:hover {
+        background-color: #6d5757;
+    }
+    
+    
+    
+    
+    
+    .habilidades {
+        padding: 20px 4%;
+    }
+    
+    .interface {
+        max-width: 900px;
+        margin: 0 auto;
+    }
+    
+    .titulo {
+        text-align: center;
+        color: #eeeeee;
+        font-size: 2.5em;
+        margin-bottom: 20px;
+    }
+    
+    .titulo span {
+        color: #da8181;
+    }
+    
+    .skill-bar {
+        display: flex;
+        flex-direction: column;
+        gap: 30px;
+    }
+    
+    .skill {
+        background: #424141; /* Corretivo: removido valor incorreto */
+        border-radius: 10px;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        padding: 15px;
+        color: #fff;
+
+    }
+    
+    .progress-bar {
+        position: relative;
+        height: 15px;
+        background-color: rgb(66, 65, 65);
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    
+    .progress {
+        height: 100%;
+        background-color: #da8181;
+        border-radius: 15px;
+        text-align: right;
+        line-height: 10px;
+        color: rgb(231, 214, 214);
+        padding-right: 10px;
+    }
+    
+    .skill h3 {
+        margin: 0;
+        padding-bottom: 10px;
+    }
+    
+    .skill span {
+        position: absolute;
+        right: 20px;
+        top: 50%; /* Corretivo: ajustado de 60% para 50% */
+        transform: translateY(-50%);
+        color: #da8181;
+        font-weight: bold;
+    }
+    footer p{
+        color: #eeeeee;
+
+
+    }
